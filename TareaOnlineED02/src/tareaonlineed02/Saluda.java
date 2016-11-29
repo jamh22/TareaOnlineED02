@@ -26,12 +26,18 @@ public class Saluda {
         
         nombre = Nombre;
     }
-    public static void main(String[] args) {
+    public static String pideNombre()
+    {
         Scanner teclado = new Scanner(System.in);
         System.out.println("¿Cual es tu nombre?");
         String tecla = teclado.next();
         setNombre(tecla);
+        nombre = tecla;
+        return nombre;
+    }
+    public static void main(String[] args) {
         
+        pideNombre();
         System.out.print("Hola ");
         System.out.println(getNombre());
         
