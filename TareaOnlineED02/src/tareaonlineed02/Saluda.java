@@ -5,6 +5,8 @@
  */
 package tareaonlineed02;
 
+import java.util.Scanner;
+
 /**
  *
  * @author munoz
@@ -15,7 +17,12 @@ public class Saluda {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Holaaaa");
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("¿Cual es tu nombre?");
+        String nombre = teclado.next();
+        
+        System.out.print("Hola ");
+        System.out.println(nombre);
     }
     
 }
