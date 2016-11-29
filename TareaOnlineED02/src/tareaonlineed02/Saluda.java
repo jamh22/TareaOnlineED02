@@ -23,6 +23,8 @@ public class Saluda {
         
         System.out.print("Hola ");
         System.out.println(nombre);
+        
+        String nomb = nombre;
     }
     
 }
