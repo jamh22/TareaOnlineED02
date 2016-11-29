@@ -38,7 +38,7 @@ public class Saluda {
     public static void main(String[] args) {
         
         pideNombre();
-        System.out.print("Hola ");
+        System.out.print("Hoola ");
         System.out.println(getNombre());
         
    
