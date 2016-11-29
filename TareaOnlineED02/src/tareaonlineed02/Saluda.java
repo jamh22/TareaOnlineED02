@@ -16,13 +16,34 @@ public class Saluda {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    private static String nombre;
+    public static String getNombre()
+    {
+        return nombre;
+    }
+    public static void setNombre(String Nombre)
+    {
+        
+        nombre = Nombre;
+    }
+    public static String pideNombre()
+    {
         Scanner teclado = new Scanner(System.in);
         System.out.println("¿Cual es tu nombre?");
-        String nombre = teclado.next();
-        
-        System.out.print("Hola ");
-        System.out.println(nombre);
+        String tecla = teclado.next();
+        setNombre(tecla);
+        nombre = tecla;
+        return nombre;
     }
+    public static void main(String[] args) {
+        
+        pideNombre();
+        System.out.print("Hoola ");
+        System.out.println(getNombre());
+        
+   
+      
+    }
+    
     
 }
